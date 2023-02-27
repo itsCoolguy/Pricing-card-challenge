@@ -4,8 +4,7 @@ html {
 }
 
 body {
-  margin: 0;
-  height: 100vh;
+  height: 97vh;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -56,19 +55,21 @@ body {
 }
 
 #bottom-section {
-  display: flex;
   width: 100%;
   height: 57%;
 }
 
 #bottom-left-section {
+  display: inline-block;
   width: 50%;
   height: 100%;
   border-radius: 0px 0px 0px 8px;
+  margin-left: 0px;
   background-color: rgba(42, 178, 175, 1)
 }
 
 #bottom-right-section {
+  display: inline-block;
   width: 50%;
   height: 100%;
   margin-right: 0px;
@@ -79,11 +80,14 @@ body {
 #top-section > p {
   color: rgba(152, 166, 189, 1);
   margin-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
 }
 
 #top-section > h3 {
   color: rgba(192, 223, 52, 1);
   margin-top: 25px;
+  padding-right: 15px;
 }
 
 h2 {
@@ -147,9 +151,9 @@ button {
   border: 0px;
   font-size: 1em;
   border-radius: 5px;
-  margin: 30px;
-  width: 75%;
-  height: 20%;
+  margin: 17px;
+  width: 100%;
+  height: 55px;
   box-shadow: 4px 9px 7px 0px rgba(0,0,0,0.05);
   overflow: hidden;
   /*transition: background-color 200ms linear;*/
@@ -160,4 +164,24 @@ button:hover {
   cursor: pointer;
   background-color: #A9C42D;
   transform: scale(1.03);
+}
+
+#bottom-left-section, #bottom-right-section {
+  vertical-align: top;
+}
+
+@media (max-width: 750px) {
+  
+  body {
+    height: auto;
+  }
+  
+  #bottom-left-section {
+    border-radius: 0;
+  }
+  
+  #bottom-left-section, #bottom-right-section, #card {
+    width: 100%;
+    height: auto;
+  }
 }
