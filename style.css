@@ -3,6 +3,14 @@ html {
   font-family: 'Karla', sans-serif;
 }
 
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
 p {
   margin : 0;
   padding: 0;
